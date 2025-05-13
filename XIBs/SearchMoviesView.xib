@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ljq-j3-6gd" customClass="SearchMoviesView" customModule="Moviebase__Task_MTSL_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnn-86-Bf0">
+                    <rect key="frame" x="51.333333333333343" y="273.66666666666663" width="290.33333333333326" height="329.66666666666663"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="jaQ-N1-A2V">
+                            <rect key="frame" x="45.333333333333343" y="5" width="200" height="200"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_movies" translatesAutoresizingMaskIntoConstraints="NO" id="QYN-Cu-3Bc">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="BoN-S0-H28">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="360"/>
+                                        </constraint>
+                                        <constraint firstAttribute="width" secondItem="QYN-Cu-3Bc" secondAttribute="height" multiplier="1:1" id="GBu-6a-ZiB"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search your movies...Search your movies...Search your movies...Search your movies...Search your movies...Search your movies..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hy-EI-ccV">
+                            <rect key="frame" x="4.3333333333333428" y="216.99999999999997" width="280.33333333333326" height="107.66666666666666"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                            </variation>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="3hy-EI-ccV" firstAttribute="leading" secondItem="cnn-86-Bf0" secondAttribute="leading" constant="4.3333333333333144" id="G9d-r6-K5r"/>
+                        <constraint firstItem="3hy-EI-ccV" firstAttribute="top" secondItem="jaQ-N1-A2V" secondAttribute="bottom" constant="12" id="IeI-Yw-CMo">
+                            <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                        </constraint>
+                        <constraint firstItem="jaQ-N1-A2V" firstAttribute="centerX" secondItem="cnn-86-Bf0" secondAttribute="centerX" id="Ntf-hD-BN0"/>
+                        <constraint firstAttribute="trailing" secondItem="3hy-EI-ccV" secondAttribute="trailing" constant="5.6666666666666856" id="Tc4-wg-ruL"/>
+                        <constraint firstItem="jaQ-N1-A2V" firstAttribute="top" secondItem="cnn-86-Bf0" secondAttribute="top" constant="5" id="Vfr-Ja-hJz"/>
+                        <constraint firstAttribute="bottom" secondItem="3hy-EI-ccV" secondAttribute="bottom" constant="5" id="h8E-BY-brg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="3d3-qG-tmX"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3d3-qG-tmX" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cnn-86-Bf0" secondAttribute="trailing" constant="45" id="GKI-2s-fim"/>
+                <constraint firstItem="cnn-86-Bf0" firstAttribute="centerX" secondItem="3d3-qG-tmX" secondAttribute="centerX" id="MeP-pW-XbA"/>
+                <constraint firstItem="cnn-86-Bf0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3d3-qG-tmX" secondAttribute="leading" constant="45" id="SNI-3e-uJz"/>
+                <constraint firstItem="cnn-86-Bf0" firstAttribute="centerY" secondItem="3d3-qG-tmX" secondAttribute="centerY" id="wnG-1m-lvQ"/>
+            </constraints>
+            <connections>
+                <outlet property="imageViewPlaceholder" destination="QYN-Cu-3Bc" id="7R7-H5-UHj"/>
+                <outlet property="labelPlaceholder" destination="3hy-EI-ccV" id="Q3a-Dl-QHo"/>
+                <outlet property="viewContainer" destination="cnn-86-Bf0" id="XLG-fa-Emm"/>
+            </connections>
+            <point key="canvasLocation" x="117" y="-4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search_movies" width="341.33334350585938" height="341.33334350585938"/>
+    </resources>
+</document>

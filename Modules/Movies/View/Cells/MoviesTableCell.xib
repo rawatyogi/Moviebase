@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MoviesTableCell" rowHeight="389" id="KGk-i7-Jjw" customClass="MoviesTableCell" customModule="Moviebase__Task_MTSL_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="528" height="389"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="528" height="389"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKq-Ug-7p8">
+                        <rect key="frame" x="0.0" y="0.0" width="528" height="381"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPa-Zh-DY3">
+                                <rect key="frame" x="10" y="5" width="508" height="373"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_icon" translatesAutoresizingMaskIntoConstraints="NO" id="zuG-Kh-Qk7">
+                                        <rect key="frame" x="0.0" y="0.0" width="508" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="hmE-Mi-awq">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="340"/>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Mby-mg-2cW">
+                                        <rect key="frame" x="12" y="218" width="484" height="143"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Yqf-dh-FM4">
+                                                <rect key="frame" x="0.0" y="0.0" width="484" height="143"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BYo-i9-uQD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="484" height="113"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Zn8-3M-XAu">
+                                                                <rect key="frame" x="0.0" y="0.0" width="484" height="76.666666666666671"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNc-9Y-2ow">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="484" height="76.666666666666671"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.81999999284744263" contentMode="left" horizontalHuggingPriority="251" text="ChhavaC C" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmR-OW-saS">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="442" height="76.666666666666671"/>
+                                                                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="20"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                                <variation key="heightClass=regular-widthClass=regular">
+                                                                                    <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="32"/>
+                                                                                </variation>
+                                                                            </label>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuJ-xp-rpP">
+                                                                                <rect key="frame" x="454" y="0.0" width="30" height="30"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" secondItem="RuJ-xp-rpP" secondAttribute="height" multiplier="1:1" id="AOd-DD-B19"/>
+                                                                                    <constraint firstAttribute="height" constant="30" id="SCB-CU-ezm">
+                                                                                        <variation key="heightClass=regular-widthClass=regular" constant="45"/>
+                                                                                    </constraint>
+                                                                                </constraints>
+                                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                                <state key="normal" image="non_fav_icon"/>
+                                                                                <state key="selected" image="fav_icon"/>
+                                                                            </button>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="KmR-OW-saS" firstAttribute="top" secondItem="qNc-9Y-2ow" secondAttribute="top" id="MdI-2O-FTp"/>
+                                                                            <constraint firstItem="RuJ-xp-rpP" firstAttribute="leading" secondItem="KmR-OW-saS" secondAttribute="trailing" constant="12" id="fda-hR-flz">
+                                                                                <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                                                                            </constraint>
+                                                                            <constraint firstItem="RuJ-xp-rpP" firstAttribute="top" secondItem="KmR-OW-saS" secondAttribute="top" id="ghd-qT-Sxl"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="KmR-OW-saS" secondAttribute="bottom" id="nTU-Iy-cH2"/>
+                                                                            <constraint firstItem="KmR-OW-saS" firstAttribute="leading" secondItem="qNc-9Y-2ow" secondAttribute="leading" id="vv6-KP-58x"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="RuJ-xp-rpP" secondAttribute="trailing" id="yPW-v0-mKL"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                                <variation key="heightClass=regular-widthClass=regular" spacing="32"/>
+                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfu-cb-Fdp">
+                                                                <rect key="frame" x="0.0" y="96.666666666666686" width="484" height="16.333333333333329"/>
+                                                                <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="12"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular">
+                                                                    <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="20"/>
+                                                                </variation>
+                                                            </label>
+                                                        </subviews>
+                                                        <variation key="heightClass=regular-widthClass=regular" spacing="30"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Oq0-6t-f03">
+                                                        <rect key="frame" x="0.0" y="127" width="484" height="16"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating : 5/10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="er3-fp-L2u">
+                                                                <rect key="frame" x="0.0" y="0.0" width="156" height="16"/>
+                                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular">
+                                                                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                                                </variation>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Year  : 2025Release Year  : 2025Release Year  : 2025" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lf-y9-jgZ">
+                                                                <rect key="frame" x="164" y="0.0" width="156" height="16"/>
+                                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular">
+                                                                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                                                </variation>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Year  : 2025" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGt-yr-3jF">
+                                                                <rect key="frame" x="328" y="0.0" width="156" height="16"/>
+                                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <variation key="heightClass=regular-widthClass=regular">
+                                                                    <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                                                </variation>
+                                                            </label>
+                                                        </subviews>
+                                                        <variation key="heightClass=regular-widthClass=regular" spacing="16"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <variation key="heightClass=regular-widthClass=regular" spacing="25"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zuG-Kh-Qk7" secondAttribute="trailing" id="4TU-8d-f8c"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mby-mg-2cW" secondAttribute="bottom" constant="12" id="EeI-4t-3uJ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="Mby-mg-2cW" secondAttribute="trailing" constant="12" id="a3m-MQ-pPc">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                    </constraint>
+                                    <constraint firstItem="zuG-Kh-Qk7" firstAttribute="leading" secondItem="lPa-Zh-DY3" secondAttribute="leading" id="kQk-OK-keq"/>
+                                    <constraint firstItem="Mby-mg-2cW" firstAttribute="top" secondItem="zuG-Kh-Qk7" secondAttribute="bottom" constant="18" id="lfz-De-vNB">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="32"/>
+                                    </constraint>
+                                    <constraint firstItem="Mby-mg-2cW" firstAttribute="leading" secondItem="lPa-Zh-DY3" secondAttribute="leading" constant="12" id="mnU-xp-2dZ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                    </constraint>
+                                    <constraint firstItem="zuG-Kh-Qk7" firstAttribute="top" secondItem="lPa-Zh-DY3" secondAttribute="top" id="qi9-PK-Q6T"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lPa-Zh-DY3" firstAttribute="leading" secondItem="bKq-Ug-7p8" secondAttribute="leading" constant="10" id="XG3-wM-gHc">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="lPa-Zh-DY3" secondAttribute="bottom" constant="3" id="cmQ-lc-54X"/>
+                            <constraint firstItem="lPa-Zh-DY3" firstAttribute="top" secondItem="bKq-Ug-7p8" secondAttribute="top" constant="5" id="xnd-EC-xcS">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="lPa-Zh-DY3" secondAttribute="trailing" constant="10" id="zhc-vp-P3p">
+                                <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="bKq-Ug-7p8" secondAttribute="bottom" constant="8" id="DRc-7Q-Kho"/>
+                    <constraint firstAttribute="trailing" secondItem="bKq-Ug-7p8" secondAttribute="trailing" id="UMC-V8-we4"/>
+                    <constraint firstItem="bKq-Ug-7p8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="W4l-wh-j62"/>
+                    <constraint firstItem="bKq-Ug-7p8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yH2-x1-8Ro"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="buttonFavorite" destination="RuJ-xp-rpP" id="IZq-gi-zjz"/>
+                <outlet property="imageViewMoviePoster" destination="zuG-Kh-Qk7" id="4WW-rJ-iZM"/>
+                <outlet property="labelLanguage" destination="pGt-yr-3jF" id="G2l-te-KV2"/>
+                <outlet property="labelMovieDescription" destination="Gfu-cb-Fdp" id="o5g-C9-zrP"/>
+                <outlet property="labelMovieReleaseYear" destination="0lf-y9-jgZ" id="ggH-Gn-pNb"/>
+                <outlet property="labelMovieTitle" destination="KmR-OW-saS" id="UPS-B4-c02"/>
+                <outlet property="labelRating" destination="er3-fp-L2u" id="Yhd-RE-Y52"/>
+                <outlet property="viewContainer" destination="lPa-Zh-DY3" id="r93-jF-Y6L"/>
+            </connections>
+            <point key="canvasLocation" x="32.061068702290072" y="140.49295774647888"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fav_icon" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="non_fav_icon" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="splash_icon" width="341.33334350585938" height="341.33334350585938"/>
+    </resources>
+</document>
