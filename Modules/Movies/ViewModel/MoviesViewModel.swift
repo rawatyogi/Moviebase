@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MoviesViewModel: MovieOpeartionProvider {
+class MoviesViewModel: MovieOperationProvider {
     
     //PROPERTIES
     var service: Services
@@ -30,6 +30,7 @@ class MoviesViewModel: MovieOpeartionProvider {
             
         case .success(let success):
             
+            //whenver a new item is searched it is matched with favorite IDs if its ID exist in the array the UI is displayed as favorite else unfavorite.
             var movie = success
             movie.isFavorite = favoriteIDs.contains(movie.imdbID ?? "")
             
@@ -86,6 +87,5 @@ class MoviesViewModel: MovieOpeartionProvider {
         case .failure(_):
             AppLogs.shared.debugLogs("Could not load favorite movies to map")
         }
-        
     }
 }

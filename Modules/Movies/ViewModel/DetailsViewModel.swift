@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DetailsViewModel: MovieOpeartionProvider {
+class DetailsViewModel: MovieOperationProvider {
     
     var cdOperations: MoviesRepository
     init(cdOperations: MoviesRepository) {

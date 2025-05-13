@@ -105,7 +105,7 @@ extension UIView {
     func pulsate() {
 
         let pulseAnimation = CABasicAnimation(keyPath: "transform.scale")
-        pulseAnimation.duration = 1.0
+        pulseAnimation.duration = 2.0
         pulseAnimation.fromValue = 0.87
         pulseAnimation.toValue = 1.15
         pulseAnimation.timingFunction = CAMediaTimingFunction(name: .linear)

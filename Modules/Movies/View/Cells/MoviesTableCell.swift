@@ -26,6 +26,8 @@ class MoviesTableCell: UITableViewCell {
         super.awakeFromNib()
         viewContainer.backgroundColor = UIColor().colorWithHexString(hex: "#151F28")
         viewContainer.makeRounded(radius:  DeviceType.shared.iPhoneDevice ? 6.0 : 10.0)
+        viewContainer.layer.borderColor = UIColor.white.withAlphaComponent(0.25).cgColor
+        viewContainer.layer.borderWidth = DeviceType.shared.iPhoneDevice ? 0.7 : 1.0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

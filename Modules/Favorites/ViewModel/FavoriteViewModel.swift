@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol MovieOpeartionProvider {
+protocol MovieOperationProvider {
     func removeMovieFromFavorites(id: String)-> Result<String, CDErrors>
     func addMovieToFavorites(movie: MoviesModel) -> Result<String, CDErrors>
 }
 
-class FavoriteViewModel: MovieOpeartionProvider {
+class FavoriteViewModel: MovieOperationProvider {
     
     //MARK: PROPERTIES
     var moviesModel: [MoviesModel] = []

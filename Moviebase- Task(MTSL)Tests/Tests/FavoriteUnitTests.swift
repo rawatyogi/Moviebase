@@ -32,7 +32,7 @@ final class FavoriteUnitTests: XCTestCase {
      
         let testingMovie = MoviesModel(title: "Testing Movie", year: "2025", rated: "12+ ASD", released: "2025", runtime: "123 min", genre: "Action, Drama", plot: "Hey this is success mock", language: "English", poster: "hh", imdbID: "ABDJ2366CX", type: "movie", isFavorite: true)
         
-        let addedResult = viewModel.addMovieToFavorites(movie: testingMovie)
+        let _ = viewModel.addMovieToFavorites(movie: testingMovie)
       
        // XCTAssertTrue(viewModel.moviesModel.contains(where: {$0.imdbID == testingMovie.imdbID ?? ""}))
         
@@ -52,7 +52,7 @@ final class FavoriteUnitTests: XCTestCase {
      
         let testingMovie = MoviesModel(title: "Testing Movie", year: "2025", rated: "12+ ASD", released: "2025", runtime: "123 min", genre: "Action, Drama", plot: "Hey this is success mock", language: "English", poster: "hh", imdbID: "ABDJ2366CX", type: "movie", isFavorite: true)
         
-        let addedResult = viewModel.addMovieToFavorites(movie: testingMovie)
+        let _ = viewModel.addMovieToFavorites(movie: testingMovie)
       
        // XCTAssertTrue(viewModel.moviesModel.contains(where: {$0.imdbID == testingMovie.imdbID ?? ""}))
         
@@ -95,7 +95,7 @@ final class FavoriteUnitTests: XCTestCase {
         let result = viewModel.getFavoriteMovies()
         
         switch result {
-        case .success(let success):
+        case .success(_):
             XCTAssertEqual(viewModel.moviesModel.count, 2)
             
         case .failure(let failure):

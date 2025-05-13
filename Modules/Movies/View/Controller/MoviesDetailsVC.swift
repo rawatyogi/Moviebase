@@ -58,7 +58,7 @@ class MoviesDetailsVC: UIViewController {
         viewMarkFavorite.makeRounded(radius: DeviceType.shared.iPhoneDevice ? 5.0 : 12.0)
         viewPosterHolder.makeRounded(radius: DeviceType.shared.iPhoneDevice ? 10.0 : 18.0)
         viewPosterHolder.layer.borderColor = UIColor.darkGray.withAlphaComponent(0.7).cgColor
-        viewPosterHolder.layer.borderWidth = 1.0
+        viewPosterHolder.layer.borderWidth = DeviceType.shared.iPhoneDevice ? 1.0 : 2.0
     }
     
     //MARK: SETUP MOVIE DATA

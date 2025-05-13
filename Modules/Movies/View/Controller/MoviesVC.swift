@@ -7,6 +7,9 @@
 
 import UIKit
 
+/*
+ This controller fetch a movie at a time while searching for a movie.To list the searched movie UITableView is used for scaling point of view.
+ */
 class MoviesVC: UIViewController {
     
     //MARK: IBOUTLETS
@@ -35,6 +38,11 @@ class MoviesVC: UIViewController {
         self.viewSearchContainer.showView()
         showAndHideSearchButtons()
         self.navigationController?.navigationBar.isHidden = true
+        
+        //the placeholder animation was being stopped if we were switching the tabs
+        if let placeholderView = (moviesTableView.backgroundView) as? SearchMoviesView {
+            placeholderView.imageViewPlaceholder.pulsate()
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -103,7 +111,10 @@ class MoviesVC: UIViewController {
     
     //MARK: TEXTFIELD TRIGGER
     @objc func textfieldEditing(_ textField: UITextField) {
+        
+        //This is where previous dispatched request is cancelled and new one is processed
         searchWorkItem?.cancel()
+        
         let task = DispatchWorkItem { [weak self] in
             guard let text = textField.text, !text.isEmpty else {
                 self?.buttonSearch.isHidden = false
@@ -117,6 +128,9 @@ class MoviesVC: UIViewController {
             self?.showAndHideSearchButtons()
         }
         searchWorkItem = task
+        /**
+         This slight debounce help to optmise the frequent API calls. It prevents frequent requests based on user input
+         */
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: task)
     }
     
@@ -134,10 +148,12 @@ class MoviesVC: UIViewController {
     //MARK: SEARCH MOVIE BY TITLE
     func searchMovieByTitle(title: String) {
         
+        //favorites are fetched first in order to map their IDs as in case that user searched movie.. favorite it, then research it so its favorite status will disappear so this mechanism is prepared.
         moviesViewModel.fetchFavoriteMovies()
         
         Task { [weak self] in
             AppLoader.shared.showLoader()
+            self?.moviesTableView.resetPlaceholderView()
             let result = await self?.moviesViewModel.searchMovieByTitle(title: title)
             
             switch result {
@@ -211,11 +227,12 @@ extension MoviesVC : UITableViewDelegate {
         
             switch operation {
             case .markFavorite:
+                //Fetch the index in the viewed / operated movie and mark it favorite
                 if let index = self?.moviesViewModel.movies.firstIndex(where: {$0.imdbID == id}) {
                     self?.moviesViewModel.movies[index].isFavorite = true
                 }
             case .unfavorite:
-                
+                //Fetch the index in the viewed / operated movie and mark it unfavorite
                 if let index = self?.moviesViewModel.movies.firstIndex(where: {$0.imdbID == id}) {
                     self?.moviesViewModel.movies[index].isFavorite = false
                 }
@@ -233,6 +250,8 @@ extension MoviesVC {
     @objc func favoriteButtonClicked(sender: UIButton) {
         
         var movie = self.moviesViewModel.movies[sender.tag]
+        
+        //Tapped movie's status is checked if it is favorite or not.Depending on the status local databse is updated and local view models data is toggled for UI.
         
         if movie.isFavorite {
             movie.isFavorite = false

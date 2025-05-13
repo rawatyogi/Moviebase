@@ -50,6 +50,7 @@ enum AppServerErrors: Error {
 }
 
 //MARK: DATABASE CONSTANTS SECTION
+/* Encryption can be used for security purpose to store ID and key*/
 struct OMDBConstants {
     static var omdbID = "tt3896198"
     static var apiKey = "5c8f24e"

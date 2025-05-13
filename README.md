@@ -8,21 +8,20 @@
  
 ## Development Plan:
 - App name: Moviebase-Task(MTSL)
+- Display name : Moviebase
 - Minimum deployment target : iOS 15.6
 - Category : Entertainment
 - Orientation Support : Portrait
 - Platforms: iPhone , iPad
-
+- Appearence : Light Mode 
 
 ## Tech Stack -
 - Development : Swift + UIKit
 - Persistenance : CoreData
 - Network Layer : URLSession
-- Architecture : MVVM
+- Architecture : MVVM(Model-View-ViewModel)
 - Backend: OMDb API
 - Design patterns: Singleton, Factory, Repository
-
-- Note : API key is listed there but if code does not work for that a new API key need to be generated. This case is rare but can exist if a particular threshold of requests is reached for the API key.
 
 # Features of Moviebase -
 
@@ -67,8 +66,13 @@
  - Press Cmd + R to build and run the app.
  
 
+ ## Note :
+ - API key is listed there but if code does not work for that a new API key need to be generated. This case is rare but can exist if a particular threshold of requests is reached for the API key.
+ 
+ - Icons are not properly mapped to 1x, 2x, 3x. I have used icons after creating and downloading from Canva for a good development and user experience.
+ 
 # Contact
-- For any query or feedback please connect on yogendrarawat0498@gmail.com
+- For any query / feedback / suggestions please connect on yogendrarawat0498@gmail.com
 
 # License
 - This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

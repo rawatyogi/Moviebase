@@ -13,7 +13,6 @@ class AppTabBarController: UITabBarController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         UITabBar.appearance().tintColor = UIColor().colorWithHexString(hex: "#FFD700")
-        
         UITabBar.appearance().unselectedItemTintColor = UIColor().colorWithHexString(hex: "#7A7A9A")
         UITabBar.appearance().backgroundColor = UIColor().colorWithHexString(hex: "#00002C")
     }

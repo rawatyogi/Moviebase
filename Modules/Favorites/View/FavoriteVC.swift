@@ -110,11 +110,16 @@ extension FavoriteVC : UITableViewDelegate {
 extension FavoriteVC {
  
     //Button on cell clicked to make movie fav or unfav
-    /**Although to add to fav part never work as we are here to undo the favorite or remove from favorites**/
     @objc func favoriteButtonClicked(sender: UIButton) {
         
-        let movie = self.favoriteViewModel.moviesModel[sender.tag]
+        /**
+         Although to add to fav part never work as we are here to undo the favorite or remove from favorites
+         
+         Checking if movie is favorite or not if favorite it will be toggled to unfavorite.
+         ViewModel uses repo to perform the fav/unfav operation
+         */
         
+        let movie = self.favoriteViewModel.moviesModel[sender.tag]
         if movie.isFavorite {
             let results = favoriteViewModel.removeMovieFromFavorites(id: movie.imdbID ?? "")
             handleFavoriteMovieResponse(result: results)
