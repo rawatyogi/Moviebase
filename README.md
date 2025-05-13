@@ -57,7 +57,7 @@
  - Simulator Environment(iOS 15.6 +)
 
  ##Clone the Repository:
- - 
+ - https://github.com/rawatyogi/Moviebase
  
  ##Run the app:
  - Open the project in Xcode.
@@ -69,4 +69,4 @@
 - For any query feedback please connect on yogendrarawat0498@gmail.com
 
 # License
-- Not generated as this a task project
+- This project is licensed under the [MIT License](./LICENSE).
