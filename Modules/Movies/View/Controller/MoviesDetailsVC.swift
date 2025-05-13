@@ -109,6 +109,7 @@ class MoviesDetailsVC: UIViewController {
             let results = moviesViewModel.removeMovieFromFavorites(id: movieData?.imdbID ?? "")
             handleFavoriteMovieReponse(result: results, operation: .unfavorite )
             self.imageViewFavorite.image = UIImage(named: "unfav_icon_detail")
+            self.labelFavorite.text = AppTexts.favorite.rawValue
         } else {
             guard var movie = movieData else { return }
             movie.isFavorite = true
@@ -116,6 +117,7 @@ class MoviesDetailsVC: UIViewController {
             let results = moviesViewModel.addMovieToFavorites(movie: movie)
             handleFavoriteMovieReponse(result: results, operation: .markFavorite)
             self.imageViewFavorite.image = UIImage(named: "fav_icon_detail")
+            self.labelFavorite.text = AppTexts.unfavorite.rawValue
         }
     }
     

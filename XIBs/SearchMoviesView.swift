@@ -34,6 +34,7 @@ class SearchMoviesView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         self.setupPlaceholders()
+        imageViewPlaceholder.pulsate()
     }
     
     func setupPlaceholders() {

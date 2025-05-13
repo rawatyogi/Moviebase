@@ -1,9 +1,4 @@
-//
-//  README.swift
-//  Moviebase- Task(MTSL)
-//
-//  Created by Yogi Rawat on 13/05/25.
-//
+
 
 
 # Moviebase-Task(MTSL)
@@ -15,13 +10,19 @@
 - App name: Moviebase-Task(MTSL)
 - Minimum deployment target : iOS 15.6
 - Category : Entertainment
+- Orientation Support : Portrait
+- Platforms: iPhone , iPad
+
 
 ## Tech Stack -
 - Development : Swift + UIKit
 - Persistenance : CoreData
 - Network Layer : URLSession
 - Architecture : MVVM
- - Design patterns: Singleton, Factory, Repository
+- Backend: OMDb API
+- Design patterns: Singleton, Factory, Repository
+
+- Note : API key is listed there but if code does not work for that a new API key need to be generated. This case is rare but can exist if a particular threshold of requests is reached for the API key.
 
 # Features of Moviebase -
 
@@ -52,22 +53,22 @@
  - Kingfisher library is used for image caching via Swift Package Manager(SPM).
  
 # Installation and Setup:
- ##Prerequisites:
+ ## Prerequisites:
  - XCode
  - macOS
  - Simulator Environment(iOS 15.6 +)
 
- ##Clone the Repository:
+ ## Clone the Repository:
  - [Moviebase-Task (MTSL) GitHub Repository](https://github.com/rawatyogi/Moviebase)
  
- ##Run the app:
+ ## Run the app:
  - Open the project in Xcode.
  - Select a simulator or connected device.
  - Press Cmd + R to build and run the app.
  
 
 # Contact
-- For any query feedback please connect on yogendrarawat0498@gmail.com
+- For any query or feedback please connect on yogendrarawat0498@gmail.com
 
 # License
 - This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

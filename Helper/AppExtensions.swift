@@ -99,3 +99,23 @@ extension UIViewController {
         }
     }
 }
+
+//MARK: VIEW ANIMATIONS
+extension UIView {
+    func pulsate() {
+
+        let pulseAnimation = CABasicAnimation(keyPath: "transform.scale")
+        pulseAnimation.duration = 1.0
+        pulseAnimation.fromValue = 0.87
+        pulseAnimation.toValue = 1.15
+        pulseAnimation.timingFunction = CAMediaTimingFunction(name: .linear)
+        pulseAnimation.autoreverses = true
+        pulseAnimation.repeatCount = .infinity
+        
+        self.layer.add(pulseAnimation, forKey: "pulsing")
+    }
+    
+    func stopPulsating() {
+        self.layer.removeAnimation(forKey: "pulsing")
+    }
+}
